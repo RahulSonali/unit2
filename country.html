@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="sel">
+        <option value="India">India</option>
+       <option value="usa">United States of America</option>
+       <option value="China">China</option>
+       <option value="Nepal">Nepal</option>
+       <option value="Australia">Australia</option>
+       <option value="France">France</option>
+       <option value="Germany">Germany</option>
+       <option value="South Africa">South Africa</option>
+       <option value="Nigeria">Nigeria</option>
+       <option value="Mexico">Mexico</option>
+       <option value="Argentina">Argentina</option>
+       <option value="Brazil">Brazil</option>
+       <option value="Canada">Canada</option>
+       <option value="Singapore">Singapore</option>
+       <option value="Sweden">Sweden</option>
+    </select>
+    <button>Find Continent</button>
+    <script>
+        document.querySelector("button").addEventListener("click",findcont)
+        function findcont(){
+           var x =  document.getElementById("sel");
+        //    for(var i =0;i<x.length;i++){
+            // console.log(x.value)
+            // console.log(x.value)
+        if(x.value=="India" || x.value== "China" || x.value== "Nepal"|| x.value=="Singapore"){
+           alert("The continent is Asia")
+        //    break
+           }
+         else if(x.value =="Australia"){
+            alert("The continent is Austrlia")
+            // break
+        }
+         else if(x.value=="France" ||  x.value=="Germany"|| x.value=="Sweden"){
+            alert("The continent is europe")
+            // break
+        }
+        else if(x.value=="South Africa" || x.value=="Nigeria"){
+            alert("The continent is Africa")
+            // break
+        }
+        else if(x.value=="Mexico" || x.value=="Canada"){
+            alert("The continent is North and Central America")
+            // break
+        }
+        else if(x.value=="Argentina" || x.value=="Brazil"){
+            alert("The continent is South America")
+            // break
+        }
+        else{
+            alert("the continet is North America ")
+        }
+       
+        }
+    </script>
+</body>
+</html>
